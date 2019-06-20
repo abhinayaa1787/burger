@@ -1,0 +1,24 @@
+<div id="imgDiv">
+    <img src="/assets/img/burger.png">
+</div>
+<h1>Eat-Da-Burger</h1>
+  {{#each burger}}
+    {{!-- {{#unless devoured}} --}}
+<div id="burgerList">
+    <div id="burgerName">    	{{id}}.{{burger_name}}
+</div>
+<div id="devourBtn">
+	<button class="devour" data-id="{{id}}" >
+		{{#unless devoured }}Devour It! {{/unless}}
+	</button>
+    </div>
+</div>
+    {{!-- {{/unless}} --}}
+  {{/each}}
+
+<div id="addBurger">
+ <input type="text" id="newBurger"><br>
+<button type="submit" id="submitBtn">Submit</button>
+<p>Enter a burger you want to eat and click "Submit</p>
+</div>
+
