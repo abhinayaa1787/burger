@@ -26,6 +26,7 @@ $(".devour").on("click", function(event) {
   };
 
 var burgerDevoured=$(this).closest('div').parent();
+
 // find(".burgerName");
 console.log(burgerDevoured);
 $(this).remove();
